@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" ng-app="Dashboard">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Cloud Book</title>
+
+  <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+  <script type="text/javascript" src="JS/bootstrap.js"></script>
+  <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+
+  <script type="text/javascript" src="JS/app.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="file:///C:/Users/MSComputers/Downloads/W9bWebApp/W9bWebApp/posts.html">Cloud
+        Book</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="file:///C:/Users/MSComputers/Downloads/W9bWebApp/W9bWebApp/posts.html">Posts <span
+                class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="file:///C:/Users/MSComputers/Downloads/W9bWebApp/W9bWebApp/signup.html">Sign-up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///C:/Users/MSComputers/Downloads/W9bWebApp/W9bWebApp/login.html">Sign-In</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Header-->
+    <div class="row align-items-start">
+      <div class="col-2"></div>
+
+      <div class="col-8" style="text-align: center;">
+        <h3>Cloud Book | Posts</h3>
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+
+    <!--New Asset Box-->
+    <div class="row align-items-start">
+      <div class="col-2"></div>
+
+      <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+        <p>Create post</p>
+
+        <form style="font-size: 10pt;" id="newAssetForm">
+          <div class="mb-3">
+            <label for="displayName" class="form-label">Display Name</label>
+            <input type="string" class="form-control" id="displayName">
+          </div>
+          <div class="mb-3">
+            <label for="comments" class="form-label">Comment</label>
+            <input type="string" class="form-control" id="comments">
+          </div>
+          <div class="mb-3">
+            <label for="tags" class="form-label">Tags</label>
+            <input type="string" class="form-control" id="tags">
+          </div>
+
+
+          <div class="mb-3">
+            <label for="UpFile" class="form-label">Attach File</label>
+            <input type="file" class="form-control" id="UpFile">
+          </div>
+
+          <button type="button" id="subNewForm" class="btn btn-danger">Post</button> <br /><br />
+
+        </form>
+      </div>
+      <div class="row align-items-start">
+        <div class="col-2"></div>
+        <div class="col-8" style="text-align: left;">
+          <div style="padding:5px;">
+            <button id="retImages" type="button" class="btn btn-danger">View Posts</button>
+          </div>
+          <div id="ImageList">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+</body>
+
+</html>
